@@ -15,20 +15,21 @@
   <body>
     <div class="container">
       <header>
-        <h1>🌍ChronoSphere</h1>
-        <p class="introduction">Your window to time around the world</p>
+        <h1>🌍 ChronoSphere</h1>
+        <p class="introduction">Your gateway to global time</p>
       </header>
 
       <section class="local-time">
-        <h3 class="city">🇿🇦 Johannesburg</h3>
-        <div class="time">07:57:30 PM</div>
-        <div class="date">Thur, July 30th, 2026</div>
+        <h3 class="city-local">🇿🇦 Johannesburg</h3>
+        <div class="time-local">07:57:30 PM</div>
+        <div class="date-local">Thur, July 30th, 2026</div>
         <div class="label">Local Time</div>
       </section>
 
       <section class="city-selector">
         <h2>🌍 Explore Another Time Zone</h2>
         <select id="cities">
+          <option value="">Select a city...</option>
           <option value="Africa/Johannesburg">
             🇿🇦 Johannesburg, South Africa
           </option>
@@ -55,9 +56,9 @@
       </section>
 
       <section class="selected-clock">
-        <h3 class="city">Select a city</h3>
-        <div class="time">--:--:--</div>
-        <div class="date">Choose a city above</div>
+        <h3 class="city-selected">Selected city</h3>
+        <div class="time-selected">--:--:--</div>
+        <div class="date-selected">Choose a city above</div>
       </section>
 
       <section class="popular-world-clocks">
@@ -74,22 +75,22 @@
             <div class="date">Thur, July 30th, 2026</div>
           </div>
           <div class="world-clock-card">
-            <h3 class="city">🇧🇷 Rio de Janeiro</h3>
+            <h3 class="city">🇧🇷 São Paulo</h3>
             <div class="time">07:57:30 PM</div>
             <div class="date">Thur, July 30th, 2026</div>
           </div>
           <div class="world-clock-card">
-            <h3 class="city">🇯🇲 Kingston</h3>
+            <h3 class="city">🇦🇪 Dubai</h3>
             <div class="time">07:57:30 PM</div>
             <div class="date">Thur, July 30th, 2026</div>
           </div>
           <div class="world-clock-card">
-            <h3 class="city">🇮🇳 Mumbai</h3>
+            <h3 class="city">🇰🇷 Seoul</h3>
             <div class="time">07:57:30 PM</div>
             <div class="date">Thur, July 30th, 2026</div>
           </div>
           <div class="world-clock-card">
-            <h3 class="city">🇦🇺 Sydney</h3>
+            <h3 class="city">🇦🇺 Melbourne</h3>
             <div class="time">07:57:30 PM</div>
             <div class="date">Thur, July 30th, 2026</div>
           </div>
@@ -98,16 +99,23 @@
 
       <footer>
         This project was coded by
-        <a href="https://github.com/matlakalasedibelwana-cpu" target="_blank"
+        <a
+          href="https://github.com/matlakalasedibelwana-cpu"
+          target="_blank"
+          rel="noopener noreferrer"
           >Matlakala Sedibelwana</a
         >, is open source on
         <a
           href="https://github.com/matlakalasedibelwana-cpu/chronosphere"
           target="_blank"
+          rel="noopener noreferrer"
           >GitHub</a
         >
         and is hosted on
-        <a href="https://chronosphere-world-clock.netlify.app/" target="_blank"
+        <a
+          href="https://chronosphere-world-clock.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
           >Netlify</a
         >
       </footer>
