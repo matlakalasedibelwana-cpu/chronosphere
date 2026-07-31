@@ -1,12 +1,140 @@
 body {
-  background-color: antiquewhite;
+  background-color: #0f172a;
+  font-family: "Inter", sans-serif;
+  color: #e2e8f0;
 }
+
+.container {
+  background-color: #1e293b;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 40px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
 h1 {
-  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #38bdf8;
+  font-size: 42px;
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+  margin-bottom: 0;
 }
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #60a5fa;
+  font-weight: 600;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: #cbd5e1;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 8px 0;
+}
+
 p {
-  text-align: center;
+  color: #94a3b8;
 }
+
+.time {
+  font-size: 32px;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+.local-time {
+  background-color: #334155;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 30px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.time-local {
+  font-size: 48px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+select {
+  display: block;
+  width: 100%;
+  background-color: #334155;
+  color: #f8fafc;
+  border: 1px solid #475569;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+select option {
+  background-color: #1e293b;
+}
+
+.selected-clock {
+  background-color: #334155;
+  padding: 24px;
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.selected-clock .time-selected {
+  font-size: 40px;
+  font-weight: 700;
+  color: #38bdf8;
+  margin: 15px 0;
+}
+
+.selected-clock .date-selected {
+  color: #94a3b8;
+}
+
+.clock-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.world-clock-card {
+  background-color: #334155;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 200ms all ease-in-out;
+}
+
+.world-clock-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:visited {
+  color: #38bdf8;
+}
+
+a:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
 footer {
-  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 40px;
 }
