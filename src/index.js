@@ -82,7 +82,7 @@ function updateWorldClocks() {
 function updateCityClocks(event) {
   if (event.target.value.length > 0) {
     let cityTimeZone = event.target.value;
-    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityName = cityTimeZone.split("/").pop().replaceAll("_", " ");
     let cityTime = moment().tz(cityTimeZone);
     let selectedCityElement = document.querySelector("#selected-city");
 
