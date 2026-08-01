@@ -1,3 +1,14 @@
+function displayLocalTime() {
+  let localTimeZone = moment.tz.guess();
+  let localCityName = localTimeZone.replace("_", " ").split("/")[1];
+  let localTime = moment().tz(localTimeZone).format("hh:mm:ss A");
+  let localDate = moment().tz(localTimeZone).format("ddd, MMM Do, YYYY");
+  currentElement.innerHTML = ` <h3 class="city-local">${localCityName}</h3>
+        <div class="time-local">${localTime}</div>
+        <div class="date-local">${localDate}</div>
+        <div class="label">Local Time</div>`;
+}
+
 function updateWorldClocks() {
   // Johannesburg
   let johannesburgElement = document.querySelector("#johannesburg");
@@ -81,6 +92,10 @@ function updateCityClocks(event) {
       <div class="date-selected">${cityTime.format("ddd, MMM Do, YYYY")}</div>`;
   }
 }
+
+let currentElement = document.querySelector("#current-location");
+displayLocalTime();
+setInterval(displayLocalTime, 1000);
 
 updateWorldClocks();
 setInterval(updateWorldClocks, 1000);
