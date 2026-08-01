@@ -40,6 +40,10 @@ p {
   color: #94a3b8;
 }
 
+p.introduction {
+  font-size: 20px;
+}
+
 .time {
   font-size: 32px;
   color: #f8fafc;
@@ -58,6 +62,9 @@ p {
   font-size: 48px;
   font-weight: 700;
   color: #38bdf8;
+}
+.date-local {
+  margin-bottom: 8px;
 }
 
 select {
@@ -92,6 +99,7 @@ select option {
 
 .selected-clock .date-selected {
   color: #94a3b8;
+  margin-bottom: 8px;
 }
 
 .clock-grid {
