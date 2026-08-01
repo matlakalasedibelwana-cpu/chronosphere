@@ -67,5 +67,23 @@ function updateWorldClocks() {
     .tz("Australia/Melbourne")
     .format("hh:mm:ss A");
 }
+
+function updateCityClocks(event) {
+  if (event.target.value.length > 0) {
+    let cityTimeZone = event.target.value;
+    let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+    let cityTime = moment().tz(cityTimeZone);
+    let selectedCityElement = document.querySelector("#selected-city");
+
+    selectedCityElement.innerHTML = `
+      <h3 class="city-selected">${cityName}</h3>
+      <div class="time-selected">${cityTime.format("hh:mm:ss A")}</div>
+      <div class="date-selected">${cityTime.format("ddd, MMM Do, YYYY")}</div>`;
+  }
+}
+
 updateWorldClocks();
 setInterval(updateWorldClocks, 1000);
+
+let citiesElement = document.querySelector("#cities");
+citiesElement.addEventListener("change", updateCityClocks);
