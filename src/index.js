@@ -89,7 +89,9 @@ function updateCityClocks(event) {
     selectedCityElement.innerHTML = `
       <h3 class="city-selected">${cityName}</h3>
       <div class="time-selected">${cityTime.format("hh:mm:ss A")}</div>
-      <div class="date-selected">${cityTime.format("ddd, MMM Do, YYYY")}</div>`;
+      <div class="date-selected">${cityTime.format("ddd, MMM Do, YYYY")}</div>
+      
+      <a href="index.html">← Clear Selection</a>`;
   }
 }
 
